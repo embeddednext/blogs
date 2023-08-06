@@ -23,4 +23,6 @@ nav:
 - Embedded Expert: 
   - Phil-Koopman: "embedded/phil.md"
 - Embedded Linux: 
+  - The Linux Foundation: "embedded-linux/the-linux-foundation.md"
+  - Cool Camera: "embedded-linux/cool-camera.md"
   - Tech A Byte: "embedded-linux/tech-byte.md"
