@@ -1,0 +1,37 @@
+site_name: Embedded Blogs
+theme: 
+   name: material
+   features:
+      -  search.suggest
+      -  search.highlight
+      -  content.tabs.link
+   plugins:
+     - search
+   palette: 
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+nav:
+- Embedded: "index.md"
+- Embedded Expert: "Embedded/Phil-Koopman.md"
+- Yocto Project:
+  - 00_Yocto_Intro: "Yocto-Project/00_Yocto_Intro.md"
+  - 01_Flashing_BBB: "Yocto-Project/01_Flashing_BBB.md"
+  - 02_Local_Conf: "Yocto-Project/02_Local_Conf.md"
+  - 03_BBLAYERS_Conf: "Yocto-Project/03_BBLAYERS_Conf.md"
+  - 04_Add_Packages: "Yocto-Project/04_Add_Packages.md"
+  - 05_Create_Layer: "Yocto-Project/05_Create_Layer.md"
+  - 06_Basic_Variables: "Yocto-Project/06_Basic_Variables.md"
+  - 07_Variable_Assignment: "Yocto-Project/07_Variable_Assignment.md"
+  - 08_Hello_World_Recipe: "Yocto-Project/08_Hello_World_Recipe.md"
+  - 09_Build_Tasks: "Yocto-Project/09_Build_Tasks.md"
+  - 10_Patch: "Yocto-Project/10_Patch.md"
+  - 11_RDEPENDS: "Yocto-Project/11_RDEPENDS.md"
+  - 12_RPROVIDES: "Yocto-Project/12_RPROVIDES.md"
