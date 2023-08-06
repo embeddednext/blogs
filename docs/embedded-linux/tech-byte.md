@@ -1,5 +1,5 @@
 
-[Yocto Project Tutorial Series](https://www.youtube.com/playlist?list=PLwqS94HTEwpQmgL1UsSwNk_2tQdzq3eVJ)
+## [Yocto Project Tutorial Series](https://www.youtube.com/playlist?list=PLwqS94HTEwpQmgL1UsSwNk_2tQdzq3eVJ)
 
  - 00 Introduction to Yocto - Building Linux for BeagleBone Black (STEP WISE!!) 
  - 01 Flashing Yocto Built Custom Linux OS onto BeagleBone Black (STEP-BY-STEP!!)
