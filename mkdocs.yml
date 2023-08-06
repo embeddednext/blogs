@@ -22,6 +22,7 @@ nav:
 - Embedded: "index.md"
 - Embedded Expert: 
   - Phil-Koopman: "embedded/phil.md"
+  - Shawn Hymel Digikey: "embedded/shawn-hymel-digikey.md"
 - Embedded Linux: 
   - The Linux Foundation: "embedded-linux/the-linux-foundation.md"
   - Cool Camera: "embedded-linux/cool-camera.md"
