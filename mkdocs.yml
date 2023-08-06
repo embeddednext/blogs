@@ -21,6 +21,6 @@ theme:
 nav:
 - Embedded: "index.md"
 - Embedded Expert: 
-  - Phil-Koopman: "embedded/phil-koopman.md"
+  - Phil-Koopman: "embedded/phil.md"
 - Embedded Linux: 
   - Tech A Byte: "embedded-linux/tech-byte.md"
