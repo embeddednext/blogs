@@ -20,4 +20,7 @@ theme:
         name: Switch to light mode
 nav:
 - Embedded: "index.md"
-- Embedded Expert: "Embedded/Phil-Koopman.md"
+- Embedded Expert: 
+  - Phil-Koopman: "embedded/phil-koopman.md"
+- Embedded Linux: 
+  - Tech A Byte: "embedded-linux/tech-byte.md"
