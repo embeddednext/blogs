@@ -20,6 +20,9 @@ theme:
         name: Switch to light mode
 nav:
 - Embedded: "index.md"
+- Youtube:
+  - Altium Designer: "youtube/altium-designer.md"
+  - The Engineering Mindset: "youtube/engineering-mindset.md"
 - Embedded Expert: 
   - Phil-Koopman: "embedded/phil.md"
   - Shawn Hymel Digikey: "embedded/shawn-hymel-digikey.md"
