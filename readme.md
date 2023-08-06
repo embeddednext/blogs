@@ -3,6 +3,7 @@ pip install mkdocs-material
 
 # MkDocs Material Guide
 - https://squidfunk.github.io/mkdocs-material/setup/
+- https://squidfunk.github.io/mkdocs-material/reference/
 - https://squidfunk.github.io/mkdocs-material/getting-started/
 - Auto Publish Site to gh-pages branch with Github CI/CD Automation
     - https://squidfunk.github.io/mkdocs-material/publishing-your-site/
