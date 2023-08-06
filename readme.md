@@ -7,6 +7,7 @@ pip install mkdocs-material
 - https://squidfunk.github.io/mkdocs-material/getting-started/
 - Auto Publish Site to gh-pages branch with Github CI/CD Automation
     - https://squidfunk.github.io/mkdocs-material/publishing-your-site/
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 # Markdown convertors
 https://tableconvert.com/markdown-to-markdown
