@@ -21,11 +21,28 @@ theme:
 
 nav:
 - Embedded: "index.md"
-- Youtube: youtube/*
+- Youtube:
+  - Altium Designer: "youtube/altium-designer.md"
+  - The Engineering Mindset: "youtube/engineering-mindset.md"
+  - Altium Designer  : "youtube/altium-designer.md"
+  - Crash Course  : "youtube/crash-course.md"
+  - Engineers Post  : "youtube/engineerspost.md"
+  - Lesics  : "youtube/lesics.md"
+  - Realpars  : "youtube/realpars.md"
 - Embedded Expert: 
   - Phil-Koopman: "embedded/phil.md"
   - Shawn Hymel Digikey: "embedded/shawn-hymel-digikey.md"
+  - Embedded for all : "embedded/embedded-for-all.md"
+  - Learn embedded systems : "embedded/learn-embedded-systems.md"
+  - Neso acedemy : "embedded/neso-acedemy.md"
+  - Shriram vasudevan : "embedded/shriram-vasudevan.md"
 - Embedded Linux: 
   - The Linux Foundation: "embedded-linux/the-linux-foundation.md"
   - Cool Camera: "embedded-linux/cool-camera.md"
   - Tech A Byte: "embedded-linux/tech-byte.md"
+  - Bootlin  : "embedded-linux/bootlin.md"
+  - HariHaran : "embedded-linux/hariharan.md"
+  - Learn Linux TV : "embedded-linux/learn-linux-tv.md"
+  - PhyTec : "embedded-linux/phytec.md"
+  - Techno Genius : "embedded-linux/techno-genius.md"
+  - Open NXP : "semi-companies/open-nxp.md"
