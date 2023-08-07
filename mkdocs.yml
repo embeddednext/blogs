@@ -18,13 +18,19 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
+
+pages:
+- Home: index.md
+- embedded: embedded/*
+- youtube: youtube/*
+
 nav:
 - Embedded: "index.md"
 - Youtube:
   - Altium Designer: "youtube/altium-designer.md"
   - The Engineering Mindset: "youtube/engineering-mindset.md"
 - Embedded Expert: 
-  - Phil-Koopman: embedded/*
+  - Phil-Koopman: "embedded/phil.md"
   - Shawn Hymel Digikey: "embedded/shawn-hymel-digikey.md"
 - Embedded Linux: 
   - The Linux Foundation: "embedded-linux/the-linux-foundation.md"
