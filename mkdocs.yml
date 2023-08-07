@@ -24,7 +24,7 @@ nav:
   - Altium Designer: "youtube/altium-designer.md"
   - The Engineering Mindset: "youtube/engineering-mindset.md"
 - Embedded Expert: 
-  - Phil-Koopman: "embedded/phil.md"
+  - Phil-Koopman: embedded/*
   - Shawn Hymel Digikey: "embedded/shawn-hymel-digikey.md"
 - Embedded Linux: 
   - The Linux Foundation: "embedded-linux/the-linux-foundation.md"
