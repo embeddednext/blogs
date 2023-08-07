@@ -19,14 +19,9 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
 
-pages:
-- Home: index.md
-- embedded: embedded/*
-- youtube: youtube/*
-
 nav:
 - Embedded: "index.md"
-- Youtube:
+- Youtube: youtube/*
   - Altium Designer: "youtube/altium-designer.md"
   - The Engineering Mindset: "youtube/engineering-mindset.md"
 - Embedded Expert: 
