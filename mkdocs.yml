@@ -22,8 +22,6 @@ theme:
 nav:
 - Embedded: "index.md"
 - Youtube: youtube/*
-  - Altium Designer: "youtube/altium-designer.md"
-  - The Engineering Mindset: "youtube/engineering-mindset.md"
 - Embedded Expert: 
   - Phil-Koopman: "embedded/phil.md"
   - Shawn Hymel Digikey: "embedded/shawn-hymel-digikey.md"
