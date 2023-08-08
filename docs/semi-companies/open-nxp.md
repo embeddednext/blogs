@@ -1,6 +1,4 @@
 
-# i.MX
-
 ## [Linux Reference](https://www.nxp.com/docs/en/reference-manual/IMX_REFERENCE_MANUAL.pdf)
  - 6.1 Capture Overview
  - 6.2 Display Overview

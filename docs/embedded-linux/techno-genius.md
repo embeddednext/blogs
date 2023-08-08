@@ -1,2 +1,2 @@
 
-# https://www.youtube.com/@TechoGeniusAcademy/playlists
+## [Techo Genius Academy](https://www.youtube.com/@TechoGeniusAcademy/playlists)

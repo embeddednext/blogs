@@ -24,13 +24,12 @@ nav:
 - Youtube:
   - Altium Designer: "youtube/altium-designer.md"
   - The Engineering Mindset: "youtube/engineering-mindset.md"
-  - Altium Designer  : "youtube/altium-designer.md"
   - Crash Course  : "youtube/crash-course.md"
   - Engineers Post  : "youtube/engineerspost.md"
   - Lesics  : "youtube/lesics.md"
   - Realpars  : "youtube/realpars.md"
 - Embedded Expert: 
-  - Phil-Koopman: "embedded/phil.md"
+  - Phil Koopman: "embedded/phil.md"
   - Shawn Hymel Digikey: "embedded/shawn-hymel-digikey.md"
   - Embedded for all : "embedded/embedded-for-all.md"
   - Learn embedded systems : "embedded/learn-embedded-systems.md"
