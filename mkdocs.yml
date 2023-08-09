@@ -28,13 +28,6 @@ nav:
   - Learn embedded systems : "embedded/learn-embedded-systems.md"
   - Neso acedemy    : "embedded/neso-acedemy.md"
   - Shriram vasudevan : "embedded/shriram-vasudevan.md"
-- Youtube :
-  - Altium Designer : "youtube/altium-designer.md"
-  - The Engineering Mindset : "youtube/engineering-mindset.md"
-  - Crash Course    : "youtube/crash-course.md"
-  - Engineers Post  : "youtube/engineerspost.md"
-  - Lesics          : "youtube/lesics.md"
-  - Realpars        : "youtube/realpars.md"
 - Embedded Linux  : 
   - The Linux Foundation : "embedded-linux/the-linux-foundation.md"
   - Cool Camera     : "embedded-linux/cool-camera.md"
@@ -45,3 +38,13 @@ nav:
   - PhyTec          : "embedded-linux/phytec.md"
   - Techno Genius   : "embedded-linux/techno-genius.md"
   - Open NXP        : "semi-companies/open-nxp.md"
+- Youtube :
+  - Altium Designer : "youtube/altium-designer.md"
+  - The Engineering Mindset : "youtube/engineering-mindset.md"
+  - Crash Course    : "youtube/crash-course.md"
+  - Engineers Post  : "youtube/engineerspost.md"
+  - Lesics          : "youtube/lesics.md"
+  - Realpars        : "youtube/realpars.md"
+- Skills Youtube:
+  - Book Summary    : "skills-youtube/books.md"
+  - Practical Life  : "skills-youtube/practical-life.md"
