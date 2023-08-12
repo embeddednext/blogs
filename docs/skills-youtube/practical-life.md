@@ -1,3 +1,5 @@
- - https://www.youtube.com/@PracticalWisdom/playlists
- - https://www.youtube.com/@namaskarprasad/playlists
- - https://www.youtube.com/@lisanetwork-RE/playlists
+ 
+ - [PracticalWisdom](https://www.youtube.com/@PracticalWisdom/playlists)
+ - [namaskarprasad](https://www.youtube.com/@namaskarprasad/playlists)
+ - [lisanetwork-RE](https://www.youtube.com/@lisanetwork-RE/playlists)
+ 
