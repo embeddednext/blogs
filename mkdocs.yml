@@ -64,10 +64,11 @@ nav:
   - Safety Critical Systems : "embedded-tech/Safety-Critical-Systems/Readme.md"
   - Open Source Hardware Projects : "embedded-tech/Open-Source-Hardware-Projects/Readme.md"
 - Embedded Linux  : 
+  - Bootlin         : "embedded-linux/bootlin.md"
+  - Bootlin Tech    : "embedded-linux/bootlin_linux_tech.md"
   - The Linux Foundation : "embedded-linux/the-linux-foundation.md"
   - Cool Camera     : "embedded-linux/cool-camera.md"
   - Tech A Byte     : "embedded-linux/tech-byte.md"
-  - Bootlin         : "embedded-linux/bootlin.md"
   - HariHaran       : "embedded-linux/hariharan.md"
   - Learn Linux TV  : "embedded-linux/learn-linux-tv.md"
   - PhyTec          : "embedded-linux/phytec.md"
