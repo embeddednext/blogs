@@ -1,0 +1,3 @@
+ - DRM (Direct Rendering Manager): Kernel subsystem for managing graphics drivers and rendering hardware.
+ - Wayland: A protocol for compositors to communicate with their clients, often used as a replacement for X11 in modern embedded systems.
+ - FBdev (Framebuffer Device): Kernel interface for graphics hardware, used for simple 2D rendering.

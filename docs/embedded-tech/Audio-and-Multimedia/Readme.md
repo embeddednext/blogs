@@ -1,0 +1,2 @@
+ - ALSA (Advanced Linux Sound Architecture): Kernel-level audio architecture for providing device drivers, APIs, and libraries for audio functionality.
+ - GStreamer: A multimedia framework for constructing graphs of media-handling components.

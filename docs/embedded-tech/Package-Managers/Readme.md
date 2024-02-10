@@ -1,0 +1,1 @@
+APT (Advanced Package Tool): A package management tool commonly used in Debian-based Linux distributions, including some embedded variants.

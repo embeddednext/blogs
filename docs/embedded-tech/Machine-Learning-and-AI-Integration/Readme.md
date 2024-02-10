@@ -1,0 +1,2 @@
+ - TensorFlow Lite: Lightweight version of TensorFlow optimized for running machine learning models on embedded devices.
+ - ONNX (Open Neural Network Exchange): Open format for representing deep learning models, allowing interoperability between different frameworks.

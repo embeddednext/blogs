@@ -1,0 +1,5 @@
+ - GPIO (General Purpose Input/Output): Drivers for controlling GPIO pins on embedded systems.
+ - SPI (Serial Peripheral Interface): Drivers for interfacing with SPI devices.
+ - I2C (Inter-Integrated Circuit): Drivers for communicating with I2C devices.
+ - UART (Universal Asynchronous Receiver-Transmitter): Drivers for serial communication.
+ - Ethernet/Wi-Fi/Bluetooth: Drivers for networking and wireless communication.

@@ -1,0 +1,1 @@
+SDKs and APIs for connecting embedded devices to cloud platforms like AWS IoT, Google Cloud IoT, or Microsoft Azure IoT.

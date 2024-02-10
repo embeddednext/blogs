@@ -1,0 +1,3 @@
+ - Accelerometer, Gyroscope, and Magnetometer: Sensors commonly used for motion sensing and orientation detection.
+ - Temperature, Humidity, and Pressure Sensors: Environmental sensors used in applications like weather monitoring and HVAC control.
+ - Camera and Image Sensors: Integration of cameras and image sensors for capturing images and video in embedded systems.

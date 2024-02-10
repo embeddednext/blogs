@@ -1,0 +1,1 @@
+Tools and protocols for securely updating firmware and software on embedded devices remotely.

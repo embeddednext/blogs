@@ -1,0 +1,1 @@
+Integration of Real-Time Operating Systems (RTOS) like FreeRTOS, Zephyr, or RTLinux alongside Linux in mixed-criticality systems.

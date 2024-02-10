@@ -1,0 +1,1 @@
+Support for multiple languages, character encodings, and regional settings in embedded Linux systems.

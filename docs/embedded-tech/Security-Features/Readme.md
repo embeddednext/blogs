@@ -1,0 +1,4 @@
+ - TPM (Trusted Platform Module): Hardware-based security module for storing cryptographic keys and performing secure boot and attestation.
+ - Secure Boot: Process of validating the authenticity of firmware and software during the boot process to prevent unauthorized code execution.
+ - Secure Firmware Update: Mechanisms for securely updating firmware to protect against tampering and ensure integrity.
+ - Encryption and Authentication: Utilization of encryption algorithms and authentication protocols to secure data transmission and storage.

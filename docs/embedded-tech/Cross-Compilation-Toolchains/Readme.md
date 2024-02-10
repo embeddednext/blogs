@@ -1,0 +1,1 @@
+Tools like GCC (GNU Compiler Collection) and LLVM/Clang configured for cross-compilation, enabling developers to compile code for architectures different from the one they are developing on.

@@ -1,0 +1,3 @@
+ - BusyBox: A collection of common UNIX utilities combined into a single executable, often used in embedded systems to conserve space.
+ - Qt: A cross-platform application framework commonly used for graphical user interfaces (GUIs) in embedded Linux systems.
+ - OpenEmbedded: The build framework behind the Yocto Project, allowing customization and optimization of embedded Linux distributions.

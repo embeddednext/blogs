@@ -1,0 +1,1 @@
+Platforms like Raspberry Pi, BeagleBone, and NVIDIA Jetson provide affordable and versatile hardware for prototyping and deploying embedded Linux projects.

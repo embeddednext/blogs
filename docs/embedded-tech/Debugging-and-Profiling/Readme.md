@@ -1,0 +1,3 @@
+ - GDB (GNU Debugger): A powerful debugger for debugging C, C++, and other languages.
+ - strace: A diagnostic, debugging, and instructional utility for monitoring system calls and signals.
+ - perf: A performance analysis tool for Linux systems.

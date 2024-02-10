@@ -1,0 +1,3 @@
+ - TCP/IP stack: The standard networking protocol suite used for communication between embedded devices and other systems.
+ - CAN (Controller Area Network): A robust serial communication protocol widely used in automotive and industrial applications.
+ - MQTT (Message Queuing Telemetry Transport): A lightweight messaging protocol ideal for IoT applications.

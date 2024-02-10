@@ -1,0 +1,1 @@
+Frameworks and tools for managing power consumption in embedded Linux systems, including CPU frequency scaling, suspend/resume functionality, and power-aware scheduling.

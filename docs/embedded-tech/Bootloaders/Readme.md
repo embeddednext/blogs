@@ -1,0 +1,1 @@
+U-Boot: A widely used bootloader in the embedded space, supporting various architectures and boards.
