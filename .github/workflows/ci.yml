@@ -9,8 +9,12 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3
+    steps: 
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.x'
+          run: npm install
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
