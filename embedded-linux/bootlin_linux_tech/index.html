@@ -1,0 +1,2340 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../bootlin/">
+      
+      
+        <link rel="next" href="../the-linux-foundation/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
+    
+    
+      
+        <title>Bootlin Tech - Embedded Blogs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bootlin-training" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Embedded Blogs" class="md-header__button md-logo" aria-label="Embedded Blogs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Embedded Blogs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bootlin Tech
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Embedded Blogs" class="md-nav__button md-logo" aria-label="Embedded Blogs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Embedded Blogs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Embedded Roadmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Embedded Expert
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Embedded Expert
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded/phil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phil Koopman
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded/shawn-hymel-digikey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shawn Hymel Digikey
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded/embedded-for-all/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Embedded for all
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded/learn-embedded-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learn embedded systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded/neso-acedemy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neso acedemy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded/shriram-vasudevan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shriram vasudevan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Embedded Technology
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Embedded Technology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Linux-Kernel/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux Kernel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Bootloaders/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bootloaders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/File-Systems/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Build-Systems/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Package-Managers/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Package Managers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Real-Time-Linux/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Real Time Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Device-Drivers/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Device Drivers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Frameworks-and-Libraries/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frameworks and Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Security-Features/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Security Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Virtualization/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Containerization/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Containerization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Board-Support-Packages/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Board Support Packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Single-Board-Computers/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Single Board Computers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Cross-Compilation-Toolchains/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cross Compilation Toolchains
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Power-Management/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Power Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Graphics-and-Display/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphics and Display
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Audio-and-Multimedia/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio and Multimedia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Networking-Protocols/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networking Protocols
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Debugging-and-Profiling/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging and Profiling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/RTOS-Integration/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RTOS Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Firmware-Updates-and-OTA-Updates/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware Updates and OTA Updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Embedded-Linux-Distributions/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Embedded Linux Distributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Industrial-Standards-and-Protocols/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Industrial Standards and Protocols
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Cloud-Integration/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Documentation-and-Community-Resources/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation and Community Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/IoT-Frameworks/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IoT Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Machine-Learning-and-AI-Integration/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Machine Learning and AI Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Sensor-Integration/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sensor Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Human-Machine-Interface-HMI/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Human Machine Interface HMI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Localization-and-Internationalization/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Localization and Internationalization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Remote-Monitoring-and-Management/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Remote Monitoring and Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Battery-Management/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Safety-Critical-Systems/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety Critical Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded-tech/Open-Source-Hardware-Projects/Readme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Source Hardware Projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Embedded Linux
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Embedded Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bootlin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bootlin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Bootlin Tech
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Bootlin Tech
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#all-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Sources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="All Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-arm-trusted-firmware-tf-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ARM Trusted Firmware (TF-A)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-op-tee-open-portable-trusted-execution-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. OP-TEE (Open Portable Trusted Execution Environment)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-u-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. U-Boot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Linux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-amazon-freertos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Amazon FreeRTOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-barebox" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Barebox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-bluez" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. BlueZ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-busybox" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. BusyBox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-coreboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. coreboot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-dpdk-data-plane-development-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. DPDK (Data Plane Development Kit)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-glibc-gnu-c-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. glibc (GNU C Library)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-grub-grand-unified-bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. GRUB (Grand Unified Bootloader)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-llvm-low-level-virtual-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. LLVM (Low-Level Virtual Machine)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-mesa" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Mesa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-musl" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. musl
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-ofono" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. oFono
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-qemu-quick-emulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. QEMU (Quick Emulator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-toybox" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Toybox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-uclibc-ng-micro-c-library-next-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. uClibc-ng (Micro C Library Next Generation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-zephyr" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Zephyr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-linux-foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Linux Foundation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cool-camera/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cool Camera
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech-byte/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tech A Byte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hariharan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HariHaran
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-linux-tv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learn Linux TV
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phytec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PhyTec
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../techno-genius/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Techno Genius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi-companies/open-nxp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open NXP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Youtube
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Youtube
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../youtube/altium-designer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Altium Designer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../youtube/engineering-mindset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Engineering Mindset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../youtube/crash-course/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crash Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../youtube/engineerspost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Engineers Post
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../youtube/lesics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lesics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../youtube/realpars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Realpars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Skills Youtube
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Skills Youtube
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skills-youtube/books/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skills-youtube/practical-life/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practical Life
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#all-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Sources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="All Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-arm-trusted-firmware-tf-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ARM Trusted Firmware (TF-A)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-op-tee-open-portable-trusted-execution-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. OP-TEE (Open Portable Trusted Execution Environment)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-u-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. U-Boot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Linux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-amazon-freertos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Amazon FreeRTOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-barebox" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Barebox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-bluez" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. BlueZ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-busybox" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. BusyBox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-coreboot" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. coreboot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-dpdk-data-plane-development-kit" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. DPDK (Data Plane Development Kit)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-glibc-gnu-c-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. glibc (GNU C Library)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-grub-grand-unified-bootloader" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. GRUB (Grand Unified Bootloader)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-llvm-low-level-virtual-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. LLVM (Low-Level Virtual Machine)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-mesa" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Mesa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-musl" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. musl
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-ofono" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. oFono
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-qemu-quick-emulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. QEMU (Quick Emulator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-toybox" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Toybox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-uclibc-ng-micro-c-library-next-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. uClibc-ng (Micro C Library Next Generation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-zephyr" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Zephyr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="bootlin-training">Bootlin Training</h1>
+<p>https://bootlin.com/docs/
+https://elixir.bootlin.com/linux/latest/source</p>
+<h2 id="all-training">All Training</h2>
+<ol>
+<li>https://bootlin.com/doc/training/autotools/</li>
+<li>https://bootlin.com/doc/training/boot-time/</li>
+<li>https://bootlin.com/doc/training/buildroot/</li>
+<li>https://bootlin.com/doc/training/buildroot-stm32/</li>
+<li>https://bootlin.com/doc/training/debugging/</li>
+<li>https://bootlin.com/doc/training/embedded-linux/</li>
+<li>https://bootlin.com/doc/training/embedded-linux-bbb/</li>
+<li>https://bootlin.com/doc/training/embedded-linux-qemu/</li>
+<li>https://bootlin.com/doc/training/embedded-linux-4d/</li>
+<li>https://bootlin.com/doc/training/graphics/</li>
+<li>https://bootlin.com/doc/training/linux-kernel/</li>
+<li>https://bootlin.com/doc/training/preempt-rt/</li>
+<li>https://bootlin.com/doc/training/yocto/</li>
+<li>https://bootlin.com/doc/training/yocto-stm32/</li>
+</ol>
+<h2 id="all-sources">All Sources</h2>
+<h3 id="1-arm-trusted-firmware-tf-a">1. <a href="https://elixir.bootlin.com/arm-trusted-firmware/latest/source">ARM Trusted Firmware (TF-A)</a></h3>
+<p>is a reference implementation of secure world software for ARMv7-A, ARMv8-A, and ARMv8.1-A processors. It provides a set of secure software components that enable TrustZone technology for ARM processors, including Secure Boot, Secure Monitor, and Trusted Board Boot Requirements (TBBR).</p>
+<blockquote>
+<p>ARM Trusted Firmware is a set of firmware components for ARM-based systems that implement various security features, such as secure boot, Trusted Execution Environment (TEE), and Secure Monitor. It is designed to work with ARM processors and provides a secure foundation for building trusted systems.</p>
+</blockquote>
+<h3 id="2-op-tee-open-portable-trusted-execution-environment">2. <a href="https://elixir.bootlin.com/op-tee/latest/source">OP-TEE (Open Portable Trusted Execution Environment)</a></h3>
+<p>is a software stack that provides a secure execution environment for trusted applications on ARM-based systems. It utilizes the ARM TrustZone technology to isolate and protect critical code and data from untrusted applications running on the same system.</p>
+<blockquote>
+<p>OP-TEE (Open Portable Trusted Execution Environment) is a TEE (Trusted Execution Environment) for ARM-based processors. It provides a secure environment for running trusted applications, such as mobile payments and secure boot, and is designed to work with ARM Trusted Firmware.</p>
+</blockquote>
+<h3 id="3-u-boot">3. <a href="https://elixir.bootlin.com/u-boot/latest/source">U-Boot</a></h3>
+<p>is a widely used open-source bootloader for embedded systems and devices. It can load and boot various operating systems and applications from different storage devices, and provides a flexible and customizable boot environment with support for various hardware configurations and features.</p>
+<blockquote>
+<p>U-Boot (Universal Bootloader) is a bootloader that is used to load operating systems on embedded systems. It provides a command-line interface for configuring and booting the system, as well as support for a wide range of hardware.</p>
+</blockquote>
+<h3 id="4-linux">4. <a href="https://elixir.bootlin.com/linux/latest/source">Linux</a></h3>
+<p>is a widely used open-source Unix-like operating system kernel. It provides the core functionality and services for running user-space applications and managing system resources, including process and memory management, file systems, networking, and device drivers.</p>
+<blockquote>
+<p>Linux is a free and open-source operating system kernel. It is used as the foundation for many different operating systems, such as Android, Chrome OS, and various Linux distributions. Linux provides a wide range of features, such as memory management, process scheduling, and file systems.</p>
+</blockquote>
+<h3 id="5-amazon-freertos">5. <a href="https://elixir.bootlin.com/amazon-freertos/latest/source">Amazon FreeRTOS</a></h3>
+<p>is an open-source operating system for microcontrollers that makes small, low-power edge devices easy to program, deploy, secure, connect, and manage. It includes an MQTT broker, Wi-Fi and Bluetooth connectivity, over-the-air updates, and built-in security.</p>
+<blockquote>
+<p>Amazon FreeRTOS is an open-source operating system for microcontrollers that enables developers to easily and securely connect IoT devices to the cloud. It includes libraries that provide support for AWS services, such as AWS IoT Core, as well as a kernel for managing the microcontroller's resources.</p>
+</blockquote>
+<h3 id="6-barebox">6. <a href="https://elixir.bootlin.com/barebox/latest/source">Barebox</a></h3>
+<p>is a versatile and customizable bootloader that supports a wide range of hardware architectures and configurations. It can load and boot operating systems such as Linux, Android, and others from various storage devices, including flash, SD card, network, and USB.</p>
+<blockquote>
+<p>Barebox is a bootloader that supports a wide range of processors and platforms. It is designed to be fast, flexible, and easy to use. Barebox provides a command-line interface for configuring and booting the system, as well as a scripting language for more complex tasks.</p>
+</blockquote>
+<h3 id="7-bluez">7. <a href="https://elixir.bootlin.com/bluez/latest/source">BlueZ</a></h3>
+<p>is the official Linux Bluetooth protocol stack. It provides support for core Bluetooth layers such as L2CAP, RFCOMM, and the Bluetooth Low Energy (BLE) protocol. It also includes many user-space utilities for Bluetooth device management and configuration.</p>
+<blockquote>
+<p>Bluez is the official Bluetooth stack for Linux. It provides support for the Bluetooth protocol and enables communication between Bluetooth devices and the host system. Bluez includes a number of utilities for managing Bluetooth devices, such as pairing, scanning, and connecting.</p>
+</blockquote>
+<h3 id="8-busybox">8. <a href="https://elixir.bootlin.com/busybox/latest/source">BusyBox</a></h3>
+<p>is a collection of Unix utilities designed for embedded systems and low-resource environments. It includes small versions of common shell utilities such as cp, mv, and ls, as well as other common utilities like grep, awk, and sed, all combined into a single binary.</p>
+<blockquote>
+<p>BusyBox is a collection of Unix utilities that are designed to be small and efficient. It provides a single binary that includes many common Unix utilities, such as ls, cp, and grep. BusyBox is often used in embedded systems where space and resources are limited.</p>
+</blockquote>
+<h3 id="9-coreboot">9. <a href="https://elixir.bootlin.com/coreboot/latest/source">coreboot</a></h3>
+<p>is an open-source firmware replacement for the BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) in modern PCs. It provides a lightweight and customizable boot environment that can support various operating systems and hardware configurations.</p>
+<blockquote>
+<p>Coreboot is an open-source firmware that replaces the proprietary firmware (BIOS or UEFI) found on most PCs. It is designed to be lightweight, fast, and customizable. Coreboot supports a wide range of hardware and can be configured to boot a variety of operating systems.</p>
+</blockquote>
+<h3 id="10-dpdk-data-plane-development-kit">10. <a href="https://elixir.bootlin.com/dpdk/latest/source">DPDK (Data Plane Development Kit)</a></h3>
+<p>is a set of libraries and drivers for fast packet processing in user-space. It allows applications to bypass the kernel network stack and communicate directly with the network hardware, enabling high-performance networking applications such as routers, gateways, and load balancers.</p>
+<blockquote>
+<p>It is designed to run on Intel x86 processors and enables applications to bypass the kernel network stack and interact directly with the network hardware.</p>
+</blockquote>
+<h3 id="11-glibc-gnu-c-library">11. <a href="https://elixir.bootlin.com/glibc/latest/source">glibc (GNU C Library)</a></h3>
+<p>is the standard C library for the GNU operating system and other Unix-like systems. It provides the basic building blocks for writing C programs, including memory allocation, string and math functions, file input/output, and network communication.</p>
+<blockquote>
+<p>glibc (GNU C Library) is the standard C library for Linux. It provides a set of functions and macros that are commonly used by C programs, such as memory allocation, string manipulation, and file I/O.</p>
+</blockquote>
+<h3 id="12-grub-grand-unified-bootloader">12. <a href="https://elixir.bootlin.com/grub/latest/source">GRUB (Grand Unified Bootloader)</a></h3>
+<p>is a widely used boot loader for Linux and other Unix-like operating systems. It can load and boot various operating systems from different storage devices, including hard drives, CD/DVDs, and network. It also provides a flexible and customizable boot environment with support for themes and various boot options.</p>
+<blockquote>
+<p>GRUB (Grand Unified Bootloader) is a bootloader that is used to load operating systems on PCs. It provides a menu that allows the user to select which operating system to boot, as well as configuration options for the kernel and boot parameters.</p>
+</blockquote>
+<h3 id="13-llvm-low-level-virtual-machine">13. <a href="https://elixir.bootlin.com/llvm/latest/source">LLVM (Low-Level Virtual Machine)</a></h3>
+<p>is a collection of modular and reusable compiler and toolchain technologies. It includes a compiler front-end for various programming languages, a code optimizer, a code generator, and various analysis and debugging tools.</p>
+<blockquote>
+<p>LLVM (Low-Level Virtual Machine) is a compiler infrastructure that is used to build a wide range of programming languages. It provides a set of libraries and tools for optimizing, compiling, and linking code. LLVM is often used in conjunction with Clang, a C/C++ compiler that uses LLVM as its back end.</p>
+</blockquote>
+<h3 id="14-mesa">14. <a href="https://elixir.bootlin.com/mesa/latest/source">Mesa</a></h3>
+<p>is an open-source implementation of the OpenGL and Vulkan graphics APIs. It provides a set of user-space libraries and drivers that allow applications to interact with 3D graphics hardware and render high-quality graphics on various platforms.</p>
+<blockquote>
+<p>Mesa is an open-source implementation of the OpenGL and Vulkan graphics APIs. It provides drivers for a wide range of hardware and enables applications to render 3D graphics on Linux and other operating systems.</p>
+</blockquote>
+<h3 id="15-musl">15. <a href="https://elixir.bootlin.com/musl/latest/source">musl</a></h3>
+<p>is a lightweight and fast C library designed for embedded and low-resource systems. It provides a subset of the standard C library functions and features, optimized for size, speed, and security.</p>
+<blockquote>
+<p>musl is a lightweight C library that is designed to be small and fast. It provides a subset of the POSIX API and is often used in embedded systems where space and resources are limited.</p>
+</blockquote>
+<h3 id="16-ofono">16. <a href="https://elixir.bootlin.com/ofono/latest/source">oFono</a></h3>
+<p>is an open-source telephony stack for mobile devices running Linux. It provides a set of user-space libraries and daemons that handle various aspects of mobile telephony, such as voice calls, SMS messaging, and mobile data.</p>
+<blockquote>
+<p>Ofono is a telephony stack for Linux. It provides support for mobile broadband and voice communication, as well as messaging and phonebook management. Ofono is often used in embedded systems, such as automotive infotainment systems and IoT devices.</p>
+</blockquote>
+<h3 id="17-qemu-quick-emulator">17. <a href="https://elixir.bootlin.com/qemu/latest/source">QEMU (Quick Emulator)</a></h3>
+<p>is a free and open-source emulator and virtualizer that can run a wide range of operating systems and hardware platforms. It can emulate different CPUs, devices, and network interfaces, and support various virtualization modes such as full virtualization, para-virtualization, and hardware-assisted virtualization.</p>
+<blockquote>
+<p>QEMU (Quick EMUlator) is a virtual machine emulator that can run a variety of guest operating systems on a host system. It provides support for a wide range of architectures, including x86, ARM, and PowerPC, and can emulate a variety of devices, such as disks, network cards, and USB controllers.</p>
+</blockquote>
+<h3 id="18-toybox">18. <a href="https://elixir.bootlin.com/toybox/latest/source">Toybox</a></h3>
+<p>is a small and modular implementation of common Unix utilities designed for embedded systems and low-resource environments. It provides a set of lightweight and customizable tools such as ls, cp, mv, and chmod, that can be used to build custom Linux distributions or systems.</p>
+<blockquote>
+<p>Toybox is a collection of Unix utilities that are designed to be small and lightweight. It provides a single binary that includes many common Unix utilities, such as ls, cp, and grep, and is often used in embedded systems.</p>
+</blockquote>
+<h3 id="19-uclibc-ng-micro-c-library-next-generation">19. <a href="https://elixir.bootlin.com/uclibc-ng/latest/source">uClibc-ng (Micro C Library Next Generation)</a></h3>
+<p>is a lightweight and optimized C library designed for embedded and low-resource systems. It provides a subset of the standard C library functions and features, optimized for size, speed, and memory footprint.</p>
+<blockquote>
+<p>uClibc-ng (Micro C Library Next Generation) is a lightweight C library that is designed to be small and fast. It provides a subset of the POSIX API and is often used in embedded systems where space and resources are limited.</p>
+</blockquote>
+<h3 id="20-zephyr">20. <a href="https://elixir.bootlin.com/zephyr/latest/source">Zephyr</a></h3>
+<p>is an open-source real-time operating system (RTOS) designed for resource-constrained and connected devices. It provides a small and flexible kernel, with support for various hardware architectures and connectivity protocols. It also includes various components for device management, security, and connectivity.</p>
+<blockquote>
+<p>Zephyr is an open-source real-time operating system (RTOS) for embedded systems. It is designed to be scalable, modular, and secure, and provides support for a wide range of hardware platforms. Zephyr is often used in IoT devices, wearables, and other embedded systems.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  </body>
+</html>
